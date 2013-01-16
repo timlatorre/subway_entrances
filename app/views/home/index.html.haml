@@ -1,1 +1,40 @@
-index!
+#sidebar
+  #logo
+    #logo_1 The
+    #logo_2 Subway Entrance
+    #logo_3 Helper
+  #search
+    = form_tag '/search', :remote => true do
+      = text_field_tag 'query'
+    #lines
+      = form_tag '/lines', :remote => true do
+        .subway_btn_row.subs_3
+          = button_tag '1', :value => '1', :id => 's_1', :class => 'subway_btn'
+          = button_tag '2', :value => '2', :id => 's_2', :class => 'subway_btn'
+          = button_tag '3', :value => '3', :id => 's_3', :class => 'subway_btn'
+        .subway_btn_row.subs_3
+          = button_tag '4', :value => '4', :id => 's_4', :class => 'subway_btn'
+          = button_tag '5', :value => '5', :id => 's_5', :class => 'subway_btn'
+          = button_tag '6', :value => '-6-', :id => 's_6', :class => 'subway_btn'
+        .subway_btn_row.subs_3
+          = button_tag 'A', :value => 'A', :id => 'A', :class => 'subway_btn'
+          = button_tag 'C', :value => 'C', :id => 'C', :class => 'subway_btn'
+          = button_tag 'E', :value => 'E', :id => 'E', :class => 'subway_btn'
+        .subway_btn_row.subs_4
+          = button_tag 'B', :value => 'B', :id => 'B', :class => 'subway_btn'
+          = button_tag 'D', :value => 'D', :id => 'D', :class => 'subway_btn'
+          = button_tag 'F', :value => 'F', :id => 'F', :class => 'subway_btn'
+          = button_tag 'M', :value => 'M', :id => 'M', :class => 'subway_btn'
+        .subway_btn_row.subs_2
+          = button_tag 'J', :value => 'J', :id => 'J', :class => 'subway_btn'
+          = button_tag 'Z', :value => 'Z', :id => 'Z', :class => 'subway_btn'
+        .subway_btn_row.subs_3
+          = button_tag 'N', :value => 'N', :id => 'N', :class => 'subway_btn'
+          = button_tag 'Q', :value => 'Q', :id => 'Q', :class => 'subway_btn'
+          = button_tag 'R', :value => 'R', :id => 'R', :class => 'subway_btn'
+        .subway_btn_row.subs_3
+          = button_tag 'G', :value => 'G', :id => 'G', :class => 'subway_btn'
+          = button_tag 'L', :value => 'L', :id => 'L', :class => 'subway_btn'
+          = button_tag '7', :value => '7', :id => 's_7', :class => 'subway_btn'
+#map
+  #map_canvas

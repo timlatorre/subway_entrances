@@ -12,4 +12,13 @@
 #
 
 class Subway < ActiveRecord::Base
+
+  def self.text_search(query)
+    self.where("name @@ :q or line @@ :q", :q => query)
+  end
+
+  def self.line_search(query)
+    self.where("line @@ :q", :q => query)
+  end
+
 end

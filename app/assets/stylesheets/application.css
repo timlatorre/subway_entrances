@@ -1,13 +1,72 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+/*--------------  Fonts --------------------*/
+
+@font-face {
+    font-family: 'akzidenzgroteskbold';
+    src: url(/assets/akzidenzgrotesk-bold-webfont.eot);
+    src: url(/assets/akzidenzgrotesk-bold-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/assets/akzidenzgrotesk-bold-webfont.woff) format('woff'),
+         url(/assets/akzidenzgrotesk-bold-webfont.ttf) format('truetype'),
+         url(/assets/akzidenzgrotesk-bold-webfont.svg#akzidenzgroteskbold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arizoniaregular';
+    src: url(/assets/arizonia-regular-webfont.eot);
+    src: url(/assets/arizonia-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/assets/arizonia-regular-webfont.woff) format('woff'),
+         url(/assets/arizonia-regular-webfont.ttf) format('truetype'),
+         url(/assets/arizonia-regular-webfont.svg#arizoniaregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--------------  Structure --------------------*/
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0; }
+
+#sidebar { width:310px; height: 100%; background-color: black; float: left; }
+#logo { color: white; font-family: 'arizoniaregular', serif; padding: 10px; font-size: 30px; border-bottom: 2px solid white; }
+#logo_1 { margin-left: 5px; }
+#logo_2 { font-family: 'akzidenzgroteskbold', Arial, sansserif; font-size: 36px; text-align: center; margin-top: -10px; }
+#logo_3 { text-align: right; margin: -10px 10px 0 0; }
+
+#search { margin: 40px 0 10px 0;}
+#search p { color: white; margin: 0 10px 0 10px; }
+input { margin: 0 0 30px 17px; width: 250px; height: 15px; border: 1px solid white; background-color: black; color: white; font-size: 16px; padding: 10px; outline: none; }
+
+#map { height: 100%; }
+#map_canvas { height: 100%; }
+
+/*--------------  Subway Buttons --------------------*/
+.subway_btn { font-family: 'akzidenzgroteskbold', Arial, sans-serif; border-radius: 50%; border: 0; width: 55px; height: 55px; margin: 0 5px; color: white; font-size: 16px; }
+.subway_btn_row { margin: 15px; }
+.subway_btn_row button { font-size: 30px; padding-top: 5px;  }
+
+.subs_2 { margin-left: 80px; }
+.subs_3 { margin-left: 55px; }
+.subs_4 { margin-left: 13px; }
+
+#s_1, #s_2, #s_3 { background-color: rgba(237, 58, 26, 1); }
+#s_1:hover, #s_2:hover, #s_3:hover { background-color: rgba(237, 58, 26, .7); }
+#s_4, #s_5, #s_6 { background-color: rgba(16, 147, 71, 1); }
+#s_4:hover, #s_5:hover, #s_6:hover { background-color: rgba(16, 147, 71, .7); }
+#A, #C, #E { background-color: rgba(49, 83, 165, 1); }
+#A:hover, #C:hover, #E:hover { background-color: rgba(49, 83, 165, .7); }
+#B, #D, #F, #M { background-color: rgba(242, 103, 34, 1); }
+#B:hover, #D:hover, #F:hover, #M:hover { background-color: rgba(242, 103, 34, .7); }
+#G { background-color: rgba(110, 190, 68, 1); }
+#G:hover { background-color: rgba(110, 190, 68, .7); }
+#J, #Z { background-color: rgba(153, 103, 40, 1); }
+#J:hover, #Z:hover { background-color: rgba(153, 103, 40, .7); }
+#L { background-color: rgba(168, 169, 172, 1); }
+#L:hover { background-color: rgba(168, 169, 172, .7); }
+#N, #Q, #R { background-color: rgba(248, 205, 14, 1); color: black; }
+#N:hover, #Q:hover, #R:hover { background-color: rgba(248, 205, 14, .7); }
+#s_7 { background-color: rgba(167, 69, 153, 1); }
+#s_7:hover { background-color: rgba(167, 69, 153, .7); }
+#S { background-color: rgba(128, 129, 131, 1); }
+#S:hover { background-color: rgba(128, 129, 131, .7); }
